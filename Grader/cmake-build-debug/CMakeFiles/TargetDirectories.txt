@@ -1,0 +1,4 @@
+/home/tom/CLionProjects/OS/ex3/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/tom/CLionProjects/OS/ex3/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/tom/CLionProjects/OS/ex3/cmake-build-debug/CMakeFiles/a.out.dir
+/home/tom/CLionProjects/OS/ex3/cmake-build-debug/CMakeFiles/ex3.dir

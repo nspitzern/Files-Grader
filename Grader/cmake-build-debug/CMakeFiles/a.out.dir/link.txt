@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/a.out.dir/ex3_2.c.o  -o a.out 

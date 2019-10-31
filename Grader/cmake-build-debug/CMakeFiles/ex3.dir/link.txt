@@ -1,0 +1,2 @@
+/usr/bin/ar qc libex3.a  CMakeFiles/ex3.dir/ex3_2.c.o CMakeFiles/ex3.dir/ex3_1.c.o
+/usr/bin/ranlib libex3.a

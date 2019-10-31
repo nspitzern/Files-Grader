@@ -1,0 +1,15 @@
+./students/no files gets 0,0,NO_C_FILE
+./students/NO C FILE gets 0,0,NO_C_FILE
+./students/Great Job2 100/great1.c,100,GREAT_JOB
+./students/Great Job5 100/great5.c.txt.txt.txt.c,100,GREAT_JOB
+./students/TIMEOUT gets 0/Example.c,0,TIMEOUT
+./students/Compilation Error gets 0/error1.c,0,COMPILATION ERROR
+./students/bad output 1 gets 0/Example.c,60,BAD_OUTPUT
+./students/similar output gets 80/Example.c,80,SIMILAR_OUTPUT
+./students/_C file and more dirs get 100/Example.c,100,GREAT_JOB
+./students/_C file more dirs get 100/jxample.c,100,GREAT_JOB
+./students/compilation error2  gets 0/error2.c,0,COMPILATION ERROR
+./students/bad output 2 gets 0/badout2.c,60,BAD_OUTPUT
+./students/Great Job3 100/great3.c,100,GREAT_JOB
+./students/TIMEOUT3 gets 0/timout4.c,0,TIMEOUT
+./students/_no c file only files gets 0,0,NO_C_FILE
