@@ -9,7 +9,7 @@ The project has two main parts:
 
 - File comparator: -
 Two files are considered as "same" if both files have exactly the same content.
-Two files are considered as "simillar" if both files have the same content are removing white spaces, new lines and case sensitivity.
+Two files are considered as "simillar" if both files have the same content after removing white spaces, new lines and case sensitivity.
 
 The program recieves 2 files paths and compare them.
 If the files are "same" - returns 3.
