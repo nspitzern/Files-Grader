@@ -400,7 +400,7 @@ int parseConfig(char* configPath, char **configInfo) {
     // check if open file failed
     if(fd == -1) {
         fprintf(stderr, "Error! Could not open config file!\n");
-        return -1;
+        return 0;
     }
 
     char buff[BUFFERSIZE] = {0};
@@ -423,7 +423,7 @@ int parseConfig(char* configPath, char **configInfo) {
 
     if(close(fd) == -1) {
         fprintf(stderr, "Error! Could not close config file!\n");
-        return  -1;
+        return  0;
     }
     return 1;
 }
