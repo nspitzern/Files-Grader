@@ -57,6 +57,7 @@ void startHierarchy(char **configInfo) {
 
     if(startingDirectory == NULL) {
         fprintf(stderr, "Error! Could not open directory: %s!\n", startDirPath);
+        free(contains_c_file);
         return;
     }
 
@@ -65,6 +66,7 @@ void startHierarchy(char **configInfo) {
 
     if(inputFile_fd == -1) {
         fprintf(stderr, "Error! Could not open input/output file!\n");
+        free(contains_c_file);
         return;
     }
 
@@ -83,6 +85,7 @@ void startHierarchy(char **configInfo) {
             strcat(nextFilePath ,pDirent->d_name);
             if(stat(nextFilePath, &p_stat) == -1) {
                 fprintf(stderr, "Error! Could not determine file stat!\n");
+                free(contains_c_file);
                 return;
             }
 
@@ -107,8 +110,10 @@ void startHierarchy(char **configInfo) {
     // close the directory
     if(closedir(startingDirectory) == -1) {
         fprintf(stderr, "Error! Could not close directory: %s!\n", startDirPath);
+        free(contains_c_file);
         return;
     }
+    free(contains_c_file);
 }
 
 /****
@@ -294,6 +299,7 @@ void nextDir(char *dirPath, int input_fd, char* outputFilePath, int* contains_c_
             strcat(nextFilePath ,pDirent->d_name);
             if(stat(nextFilePath, &p_stat) == -1) {
                 fprintf(stderr, "Error! Could not determine file stat!\n");
+                closedir(currentDir);
                 return;
             }
 
@@ -310,6 +316,7 @@ void nextDir(char *dirPath, int input_fd, char* outputFilePath, int* contains_c_
             }
         }
     }
+    closedir(currentDir);
 }
 
 /*****
